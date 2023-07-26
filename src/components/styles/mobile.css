@@ -1,0 +1,94 @@
+/* --------------Phone--------------*/
+
+.download_app{
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.download_bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.download_heading{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: left;
+}
+.download_para{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 149.8%;
+    color: #4F516B;
+    text-align: left;
+    margin: 3rem 0;
+}
+
+.download_container{
+    width: 112rem;
+    margin: 6rem 2rem; 
+    padding: 2rem;
+    background-color: #FFF8EE;  
+    border: 5px solid #0E120D;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div_1{
+    margin: 1rem;
+}
+
+.btn-buttons{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.button_apple{
+    width: 11rem;
+    height: 3.5rem;
+    background: #F0BD54;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+.button_google_play{
+    width: 12rem;
+    height: 3.5rem;
+    background: #FFFBF8;
+    border-radius: 2rem;
+    border: 2px solid #F0BD54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_apple:hover,
+.button_google_play:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.image_mobile{
+    width: 24rem;
+    height: 47rem;
+    border-radius: 4rem;
+}
