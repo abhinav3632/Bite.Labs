@@ -13,10 +13,13 @@ footer{
     display: flex;
     grid-gap: 1rem;
     justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(50px,1fr)); */
 }
 
 .container1{
+	/* max-width: 100px; */
     margin: auto;
+
 }
 .row1{
 	display: flex;
@@ -32,6 +35,7 @@ ul{
     padding: 70px 0;
 }
 .footer-col{
+   /* width: 25%; */
    padding: 0 2.8rem;
 }
 .footer-col h4{

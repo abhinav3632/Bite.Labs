@@ -9,6 +9,8 @@
   }
   
   .search-container form{
+    /* width: var(--view-width);
+    max-width: var(--max-width); */
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;

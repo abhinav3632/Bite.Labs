@@ -1,46 +1,88 @@
-/* Favourites */
-.favorites{
-  position: relative;
+  /* Favourites */
+  .favorites {
+    position: fixed;
     top: 12rem;
+    min-height: 14rem;
+    left: 0;
+    width: 3rem; 
+    max-height: 80vh; 
     background: var(--black);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 1rem;
+    overflow: hidden;
+    transition: width 0.5s; 
+    border-radius: 0 1rem 1rem 0;
   }
-  .favorites-content{
-    width: var(--view-width);
-    max-width: var(--max-width);
-    margin: 0 auto;
-  }
-  .fav-heading{
-    font-size: 2rem;
 
+  .favorites:hover {
+    width: 15rem; 
   }
-  .favorites-container{
+
+  .fav-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    padding: 1rem;
+    left: 1rem;
+    text-align: center;
+    z-index: 1; 
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: bold;
+    opacity: 0.7; 
+    transition: opacity 0.5s;
+  }
+
+  .favorites:hover .fav-text {
+    opacity: 1;
+    display: none;
+  }
+
+  .favorites-content {
+    display: none;
+  }
+
+  .favorites:hover .favorites-content {
+    display: block;
+  }
+
+  .fav-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem; 
+  }
+
+  .favorites-container {
     display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    gap: 1rem; 
   }
-  .favorite-item{
+
+  .favorite-item {
     text-align: center;
   }
-  .favorites-img{
+
+  .favorites-img {
     width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     border: 5px solid var(--white);
     cursor: pointer;
   }
-  .remove-btn{
+
+  .remove-btn {
     margin-top: 0.25rem;
     background: transparent;
     color: var(--white);
     border: transparent;
     cursor: pointer;
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     transition: var(--transition);
   }
-  .remove-btn:hover{
-    color: var(--white);
-    scale: 2;
+
+  .remove-btn:hover {
+    color: var(--red-dark);
   }
   
   
